@@ -9,3 +9,5 @@
 /obj
 # Built Visual Studio Code Extensions
 *.vsix
+
+.fake
