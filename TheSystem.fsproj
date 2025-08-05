@@ -9,6 +9,7 @@
     <Compile Include="Setup.fs" />
     <Compile Include="Program.fs" />
     <Compile Include="File.fs" />
+    <Compile Include="Folder.fs" />
   </ItemGroup>
 
 </Project>
