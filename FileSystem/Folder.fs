@@ -1,6 +1,6 @@
 ﻿namespace FileSystem
 
-module Types =
+module FileTypes =
     type Folder = {
         Name: string
         Files: File list
