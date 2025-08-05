@@ -1,6 +1,6 @@
 ﻿namespace FileSystem
 open FileTypes
-module FileFunctions =
+module IO =
     
     let rec addFile (path: string list) (file: File) (folder: Folder) : Folder =
         match path with
