@@ -1,11 +1,14 @@
 namespace Setup
 
 open System
-module phases =
 
-    [<Literal>]
-    let introDialogue = "Hello...seEms yOu ave the SyStem me on."
-    
-    let phaseOne =
-        introDialogue |> String.iter (fun c -> printf $"%s{introDialogue}")
-        printfn "Hello"
+
+module dialogue =
+     [<Literal>]
+     let introDialogue: string = "Hello..yOu ave switched oN the System."
+     
+module phases =
+     let phaseOne =
+        printfn "%s" dialogue.introDialogue
+
+
