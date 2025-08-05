@@ -3,6 +3,6 @@
 module FileTypes =
     type Folder = {
         Name: string
-        Files: File list
+        Files: FileTypes.File list
         Subfolders: Folder list
     }
