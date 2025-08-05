@@ -5,7 +5,8 @@
     <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup><Compile Include="Setup.fs" />
+  <ItemGroup>
+    <Compile Include="Setup.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
