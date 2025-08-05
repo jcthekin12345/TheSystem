@@ -3,7 +3,7 @@
 ///
 /// This module includes:
 /// - A `File` type, which models a file with a name and its content.
-module FileTypes =
+module FileType =
     /// Represents a file in a file system.
     ///
     /// A file has the following properties:

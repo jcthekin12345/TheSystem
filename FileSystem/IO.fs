@@ -1,5 +1,6 @@
 ﻿namespace FileSystem
-open FileTypes
+open FileType
+open FolderType
 /// The `IO` module provides functionality for interacting with file system data structures.
 ///
 /// This module contains:
