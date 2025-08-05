@@ -1,9 +1,11 @@
-﻿namespace TheSystem
+﻿namespace FileSystem
 
-type File = {
-    Name: string
-    Content: string // or byte[], or custom type
-}
+module Files =
+    type File = {
+        Name: string
+        Content: string // or byte[], or custom type
+    }
+    
 
 
 
