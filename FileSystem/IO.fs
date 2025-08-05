@@ -1,13 +1,15 @@
-﻿module TheSystem.IO
-
-let rec addFile (path: string list) (file: File) (folder: Folder) : Folder =
-    match path with
-    | [] -> { folder with Files = file :: folder.Files }
-    | dir :: rest ->
-        let updatedSubfolders =
-            folder.Subfolders
-            |> List.map (fun sub ->
-                if sub.Name = dir then addFile rest file sub
-                else sub
-            )
-        { folder with Subfolders = updatedSubfolders }
+﻿namespace FileSystem
+open FileTypes
+module FileFunctions =
+    
+    let rec addFile (path: string list) (file: File) (folder: Folder) : Folder =
+        match path with
+        | [] -> { folder with Files = file :: folder.Files }
+        | dir :: rest ->
+            let updatedSubfolders =
+                folder.Subfolders
+                |> List.map (fun sub ->
+                    if sub.Name = dir then addFile rest file sub
+                    else sub
+                )
+            { folder with Subfolders = updatedSubfolders }
