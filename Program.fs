@@ -3,5 +3,5 @@ open Setup
 
 [<EntryPoint>]
 let main argv = 
-    phases.phaseOne 
+    phases.systemInfo
     0
