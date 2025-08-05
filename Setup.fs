@@ -1,9 +1,11 @@
 namespace Setup
 
+open System
 module phases =
 
+    [<Literal>]
+    let introDialogue = "Hello...seEms yOu ave the SyStem me on."
+    
     let phaseOne =
-        [<Literal>]
-        let introDialogue = "Hello...seEms yOu ave the SyStem me on."
         introDialogue |> String.iter (fun c -> printf $"%s{introDialogue}")
         printfn "Hello"
